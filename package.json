@@ -1,7 +1,28 @@
 {
-  "name": "war",
+  "name": "war-root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "version": "1.0.0",
-  "dependencies": {
-    "typescript": "4.0.5"
+  "scripts": {
+    "build-all": "tsc -b -v packages",
+    "build": "lerna exec -- tsc -b -v .",
+    "clean": "lerna exec -- rm -rf lib cjs dist types *.tsbuildinfo",
+    "watch": "yarn build -w",
+    "clean:build": "yarn clean && yarn build"
+  },
+  "devDependencies": {
+    "@ria-develop/eslint-config": "^0.0.6",
+    "lerna": "^3.22.1",
+    "typescript": "^4.0.5",
+    "@octokit/core": "^3.2.1",
+    "eslint": "^7.12.1",
+    "prettier": "^2.1.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@ria-develop"
+    ]
   }
 }

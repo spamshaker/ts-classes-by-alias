@@ -1,12 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ES6",
-    "moduleResolution": "Node",
     "baseUrl": ".",
     "paths": {
-      "war-core/BaseWar": [
-        "./war-core/src/BaseWar"
+      "@war-core/*": [
+        "./packages/war-core/src/*"
       ]
     }
   }

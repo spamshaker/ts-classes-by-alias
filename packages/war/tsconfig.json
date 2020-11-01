@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.settings.json",
+  "compilerOptions": {
+    "outDir": "./cjs",
+    "rootDir": "./src",
+    "declarationDir": "./types"
+  },
+  "references": [
+    {
+      "path": "../war-core"
+    }
+  ],
+  "include": [
+    "./src/*"
+  ]
+}

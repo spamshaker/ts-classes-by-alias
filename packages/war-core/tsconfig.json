@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig.settings.json",
+  "compilerOptions": {
+    "outDir": "./cjs",
+    "rootDir": "./src",
+    "declarationDir": "./types"
+  },
+  "include": [
+    "./src/*"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "war",
+  "version": "1.0.0",
+  "module": "csj/War.js",
+  "dependencies": {
+    "war-core": "1.0.0"
+  }
+}
