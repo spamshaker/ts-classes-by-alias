@@ -2,6 +2,6 @@
   "name": "war",
   "version": "1.0.0",
   "dependencies": {
-    "typescript": "*"
+    "typescript": "4.0.5"
   }
 }
